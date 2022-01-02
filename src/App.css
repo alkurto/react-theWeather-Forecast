@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.Main {
+  background-color: #d8d8d8;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input start*/
+.city__input {
+  display: flex;
+  justify-content: center;
 }
+.cityAddForm {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  border-radius: 12xp;
+  box-shadow: 3px 3px 12px 1p rgba(0, 0, 0, 0.25);
+}
+.Input {
+  width: 80%;
+  padding: 4px 8px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #3a8ac0;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  outline: 0;
+}
+.Button {
+  width: 20%;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* Input Finish */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Cards start */
+.CardList {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.Card {
+  width: 200px;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #3a8ac0;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 24px;
+  box-shadow: 3px 3px 12px 1p rgba(0, 0, 0, 0.25);
+}
+.Card:first-child {
+  margin-left: 0;
+}
+.card__body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card__title {
+  font-size: 24px;
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card__description {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.card__temperature {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+.card__information {
+  margin-top: 12px;
+}
+.card__information div {
+  margin-top: 4px;
 }
